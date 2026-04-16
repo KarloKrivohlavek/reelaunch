@@ -58,29 +58,27 @@ export interface SiteConfig {
 }
 
 const siteConfig: SiteConfig = {
-  name: 'Astro Rocket',
+  name: 'ReeLaunch',
   description:
-    'Astro Rocket — A production-ready Astro 6 starter with 12 beautiful themes, 57+ components, built-in i18n, dark mode and a fast, modern foundation to build anything on.',
+    'We help you ',
   url: SITE_URL || 'https://astrorocket.dev',
   ogImage: '/og-default.svg',
-  author: 'Hans Martens',
-  email: 'hello@hansmartens.dev',
+  author: 'Karlo Krivohlavek',
+  email: 'karlo.krivohlavek@hotmail.com',
   address: {
     street: '',
-    city: 'Veghel',
+    city: 'Zagreb',
     state: '',
     zip: '',
-    country: 'the Netherlands',
+    country: 'Croatia',
   },
   socialLinks: [
-    'https://github.com/hansmartens68/Astro-Rocket',
-    'https://x.com/hansmartens_dev',
-    'https://www.linkedin.com',
-    'https://bsky.app/profile/hansmartens-online.bsky.social',
+    
+    
   ],
   twitter: {
-    site: 'https://x.com/hansmartens_dev',
-    creator: '@hansmartens_dev',
+    site: '',
+    creator: '',
   },
   verification: {
     google: GOOGLE_SITE_VERIFICATION,

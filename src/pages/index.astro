@@ -23,33 +23,30 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
 ---
 
 <LandingLayout
-  title="Astro Rocket — Astro 6 starter theme"
-  description="A production-ready Astro 6 starter with 12 beautiful themes, 57+ components, built-in i18n, dark mode and a fast, modern foundation to build anything on."
+  title="Do You Want to Grow Your Online Presence?"
+  description="Turn your ideas into high-performing short-form content—without wasting time figuring out filming, editing, or strategy."
   image="/og-default.svg"
   includePersonSchema={true}
   includeProfessionalServiceSchema={true}
 >
   <!-- Hero -->
   <Hero layout="centered" size="xl" class="hero-dark-gradient" showScrollIndicator descriptionClass="max-w-3xl">
-    <Badge slot="badge" variant="brand" pill pulse class="dark:text-brand-200">Available for new projects</Badge>
+    
 
     <h1 slot="title">
-      <span class="text-foreground [-webkit-text-fill-color:currentColor]">Astro Rocket —</span><br />
-      <span class="text-brand-500 [-webkit-text-fill-color:var(--color-brand-500)] dark:text-foreground dark:[-webkit-text-fill-color:currentColor]">Web Designer</span><span class="text-foreground [-webkit-text-fill-color:currentColor]"> &amp; Developer</span>
+      <span class="text-foreground [-webkit-text-fill-color:currentColor]">Do You Want to Grow Your Online Presence?</span><br />
+    
     </h1>
 
     <p slot="description">
-      A production-ready Astro 6 starter with 12 beautiful themes, 57+ components, built-in i18n, dark mode and a fast, modern foundation to build anything on.
+      Turn your ideas into high-performing short-form content—without wasting time figuring out filming, editing, or strategy.
     </p>
 
    <Fragment slot="actions">
-      <Button size="lg" href="https://github.com/hansmartens68/Astro-Rocket">
-        <Icon name="github" size="sm" />
-        Get it on GitHub
-      </Button>
-      <Button size="lg" variant="outline" href="/blog/astro-rocket-getting-started">
+     
+      <Button size="lg" variant="outline" href="/contact">
         <Icon name="rocket" size="sm" />
-        Get started
+        I’m ready to launch
         <Icon name="arrow-right" size="sm" />
       </Button>
     </Fragment>
@@ -62,7 +59,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
         <div class="flex flex-col items-center gap-6">
           <Badge variant="brand" pill>Services</Badge>
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
-            What I do
+            What we do
           </h2>
         </div>
         <p class="text-lg text-foreground-muted max-w-2xl mx-auto">
@@ -71,46 +68,61 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
       </div>
 
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-reveal data-reveal-delay="1">
-        <!-- Web Design -->
+        <!-- Short form video editing -->
         <Card hover>
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
               <Icon name="layout" size="sm" />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base font-semibold text-foreground">Web Design</h3>
+              <h3 class="text-base font-semibold text-foreground">Short form video editing</h3>
               <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
-                Clean, modern interfaces that look great on every screen. Focused on clarity, usability, and your brand identity.
+                We transform your raw footage into high-retention, engaging short-form videos optimized for platforms like TikTok, Reels, and YouTube Shorts. Every edit is designed to capture attention, increase watch time, and drive results.
               </p>
             </div>
           </div>
         </Card>
 
-        <!-- Web Development -->
+        <!-- Gear Buying Guide -->
         <Card hover>
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
-              <Icon name="code" size="sm" />
+              <Icon name="camera" size="sm" />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base font-semibold text-foreground">Web Development</h3>
+              <h3 class="text-base font-semibold text-foreground">Gear Buying</h3>
               <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
-                Fast, accessible websites built with modern tooling. Astro, Tailwind, and best-practice architecture from day one.
+                We help you choose the right equipment for your budget and goals, so you avoid overspending or buying the wrong gear. You get a simple, effective setup that delivers professional-quality content.
               </p>
             </div>
           </div>
         </Card>
 
-        <!-- Performance -->
+        <!-- Filming Guide -->
         <Card hover>
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
-              <Icon name="zap" size="sm" />
+              <Icon name="clapperboard" size="sm" />
             </div>
             <div class="flex-1 min-w-0">
-              <h3 class="text-base font-semibold text-foreground">Performance Optimization</h3>
+              <h3 class="text-base font-semibold text-foreground">Filming Guide</h3>
               <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
-                Core Web Vitals, SEO, and page speed — built in from the start, not bolted on at the end.
+                We show you exactly how to film your content—from framing and lighting to delivery—so recording becomes quick and effortless. The focus is on creating a repeatable setup you can use consistently.
+              </p>
+            </div>
+          </div>
+        </Card>
+
+          <!-- Scale Strategy -->
+        <Card hover>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center text-brand-500 shrink-0">
+              <Icon name="chart-no-axes-combined" size="sm" />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-base font-semibold text-foreground">Scale Strategy</h3>
+              <p class="text-sm text-foreground-muted leading-relaxed mt-1.5">
+                We give you a clear plan for posting, improving, and growing your content over time. Instead of guessing, you follow a structured approach designed to build momentum and turn views into opportunities.
               </p>
             </div>
           </div>
@@ -125,36 +137,36 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
       <div class="grid gap-12 lg:grid-cols-2">
         <div class="flex flex-col justify-center" data-reveal>
           <div class="flex flex-col gap-6 mb-6">
-            <Badge variant="brand" pill class="self-start">About me</Badge>
+            <Badge variant="brand" pill class="self-start">About us</Badge>
             <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground">
-              Designer, developer,<br />
-              <span class="text-brand-500">and blogger.</span>
+              Editors, developers,<br />
+              <span class="text-brand-500">and designers.</span>
             </h2>
           </div>
           <p class="text-lg text-foreground-muted leading-relaxed mb-4">
-           Sixteen years of hands-on experience{siteConfig.address?.city ? `, based in ${siteConfig.address.city}` : ''} and available for clients worldwide. I build with Astro because it aligns with how I think about the web: lean, purposeful, and built to last.
+           Years of hands-on experience{siteConfig.address?.city ? `, based in ${siteConfig.address.city}` : ''} and available for clients worldwide. We create high-quality, engaging short-form content for TikTok, Reels, and YouTube Shorts.
           </p>
-          <p class="text-lg text-foreground-muted leading-relaxed mb-8">
+          <!-- <p class="text-lg text-foreground-muted leading-relaxed mb-8">
            On the blog, I share the ideas and decisions that shape my work.
           </p>
            <Button variant="outline" href="/about" class="self-start">
             More about me
-          </Button>
+          </Button> -->
         </div>
         <Card variant="elevated" padding="lg" class="h-full flex flex-col" data-reveal data-reveal-delay="1">
           <p class="text-sm text-foreground mb-5 text-center">A few things about me.</p>
           <div class="grid grid-cols-2 gap-3 flex-1 auto-rows-fr">
-            <div class="bg-background-tertiary rounded-xl p-5 flex flex-col items-center justify-center text-center gap-2 border-t-2 border-brand-500/40 transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-brand-500 cursor-default h-full">
+            <!-- <div class="bg-background-tertiary rounded-xl p-5 flex flex-col items-center justify-center text-center gap-2 border-t-2 border-brand-500/40 transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-brand-500 cursor-default h-full">
               <Icon name="history" class="w-10 h-10 text-brand-500" />
               <p class="text-sm font-semibold text-foreground">16 Years Experience</p>
-            </div>
-            <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="bg-background-tertiary rounded-xl p-5 flex flex-col items-center justify-center text-center gap-2 border-t-2 border-brand-500/40 transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-brand-500 h-full">
+            </div> -->
+            <!-- <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="bg-background-tertiary rounded-xl p-5 flex flex-col items-center justify-center text-center gap-2 border-t-2 border-brand-500/40 transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-brand-500 h-full">
               <svg class="w-10 h-10 text-brand-500" viewBox="0 0 1280 1280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M815.039 94.6439C824.758 106.709 829.714 122.99 839.626 155.553L1056.17 866.901C976.107 825.368 889.072 795.413 797.281 779.252L656.29 302.798C653.983 295.002 646.822 289.654 638.693 289.654C630.542 289.654 623.368 295.03 621.08 302.853L481.795 779.011C389.579 795.1 302.146 825.109 221.741 866.793L439.347 155.388L439.348 155.388C449.291 122.882 454.262 106.629 463.982 94.5853C472.562 83.9531 483.723 75.6958 496.4 70.6002C510.76 64.8284 527.756 64.8284 561.749 64.8284H717.174C751.212 64.8284 768.23 64.8284 782.603 70.6123C795.292 75.7184 806.459 83.9923 815.039 94.6439Z" fill="currentColor"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M840.951 900.754C805.253 931.279 734.002 952.097 651.929 952.097C551.197 952.097 466.767 920.737 444.363 878.561C436.354 902.732 434.558 930.396 434.558 948.068C434.558 948.068 429.281 1034.84 489.636 1095.2C489.636 1063.86 515.042 1038.46 546.381 1038.46C600.097 1038.46 600.036 1085.32 599.987 1123.34C599.986 1124.48 599.984 1125.61 599.984 1126.73C599.984 1184.44 635.255 1233.91 685.416 1254.77C677.924 1239.36 673.721 1222.05 673.721 1203.77C673.721 1148.73 706.034 1128.23 743.588 1104.41L743.588 1104.41C773.469 1085.46 806.668 1064.41 829.548 1022.17C841.486 1000.13 848.265 974.893 848.265 948.068C848.265 931.573 845.702 915.676 840.951 900.754Z" fill="currentColor"/>
               </svg>
-              <p class="text-sm font-semibold text-foreground">Building with Astro</p>
-            </a>
+              <p class="text-sm font-semibold text-foreground">Working with Adobe Creative Suite</p>
+            </a> -->
             <div class="bg-background-tertiary rounded-xl p-5 flex flex-col items-center justify-center text-center gap-2 border-t-2 border-brand-500/40 transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-brand-500 cursor-default h-full">
               <Icon name="globe" class="w-10 h-10 text-brand-500" />
               <p class="text-sm font-semibold text-foreground">Working worldwide</p>
@@ -170,7 +182,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
   </section>
 
   <!-- Portfolio -->
-  <section id="work" class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
+  <!-- <section id="work" class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <div class="mx-auto max-w-6xl px-6 flex flex-col gap-8">
       <div class="flex flex-col items-center gap-4 text-center" data-reveal>
         <div class="flex flex-col items-center gap-6">
@@ -211,10 +223,10 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
         ))}
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Testimonials -->
-  <section class="relative z-10 py-[var(--space-section-md)] bg-background border-t border-border">
+  <section class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <div class="mx-auto max-w-6xl px-6 flex flex-col gap-8">
       <div class="flex flex-col items-center gap-4 text-center" data-reveal>
         <div class="flex flex-col items-center gap-6">
@@ -223,9 +235,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
             What clients say
           </h2>
         </div>
-        <p class="text-lg text-foreground-muted">
-          Replace these with your own client quotes.
-        </p>
+       
       </div>
 
       <div class="grid gap-6 md:grid-cols-2" data-reveal data-reveal-delay="1">
@@ -240,14 +250,14 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
               ))}
             </div>
             <blockquote class="flex-1 text-foreground-muted leading-relaxed">
-              "The new site launched on time and hit every goal we set. Performance improved dramatically — load times dropped and the feedback from our customers has been overwhelmingly positive."
+             "We went from not posting consistently to having a clear system and high-quality short-form content every week. The editing made a huge difference in engagement, and everything feels much more professional."
             </blockquote>
             <div class="flex items-center gap-3 pt-4 border-t border-border">
               <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-500/30 to-brand-500/10 flex items-center justify-center text-brand-500 font-bold text-sm shrink-0">
                 A
               </div>
               <div>
-                <p class="text-sm font-semibold text-foreground">Alex Morgan</p>
+                <p class="text-sm font-semibold text-foreground">Mia Hobota</p>
                 <p class="text-xs text-foreground-muted">Founder, Bright Studio</p>
               </div>
             </div>
@@ -265,14 +275,14 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
               ))}
             </div>
             <blockquote class="flex-1 text-foreground-muted leading-relaxed">
-              "Straightforward from first conversation to final handover. The right questions were asked, we were kept in the loop throughout, and the end result exceeded what we imagined. Would recommend without hesitation."
+            "From the first call to ongoing content delivery, everything was simple and structured. I knew exactly what to film, and the final videos came out better than expected. Made the whole process effortless."
             </blockquote>
             <div class="flex items-center gap-3 pt-4 border-t border-border">
               <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-500/30 to-brand-500/10 flex items-center justify-center text-brand-500 font-bold text-sm shrink-0">
                 S
               </div>
               <div>
-                <p class="text-sm font-semibold text-foreground">Sarah Chen</p>
+                <p class="text-sm font-semibold text-foreground">Boris Haman</p>
                 <p class="text-xs text-foreground-muted">CEO, Luma Agency</p>
               </div>
             </div>
@@ -283,7 +293,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
   </section>
 
   <!-- Blog -->
-  <section class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
+  <!-- <section class="relative z-10 py-[var(--space-section-md)] bg-background-secondary border-t border-border">
     <div class="mx-auto max-w-6xl px-6 flex flex-col gap-8">
       <div class="flex items-end justify-between" data-reveal>
         <div class="flex flex-col gap-6">
@@ -320,25 +330,25 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
         </Button>
       </div>
     </div>
-  </section>
+  </section> -->
 
  <!-- CTA -->
   <section class="relative z-10 py-[var(--space-section-md)] bg-background">
     <div class="mx-auto max-w-2xl px-6 text-center" data-reveal>
       <h2 class="font-display text-4xl font-bold text-foreground mb-4 text-balance">
-        Have a project in mind?
+      Do You Want to Grow Your Online Presence?
       </h2>
       <p class="text-lg text-foreground-muted mb-8 text-balance">
-        Whether it's a new build or something that needs a fresh perspective — I'd love to hear about it.
+         Turn your ideas into high-performing short-form content—without wasting time figuring out filming, editing, or strategy.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button size="lg" href="/contact">
-          Start a project
+          Book a call
           <Icon name="arrow-right" size="sm" />
         </Button>
-        <Button size="lg" variant="outline" href="/about">
+        <!-- <Button size="lg" variant="outline" href="/about">
           More about me
-        </Button>
+        </Button> -->
       </div>
     </div>
   </section>
