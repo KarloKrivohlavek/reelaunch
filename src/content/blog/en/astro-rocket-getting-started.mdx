@@ -132,10 +132,10 @@ The form works without these variables — it simply disables submission — so 
 
 Your site is live. Every subsequent push to `main` triggers a new deployment automatically. Pull request previews are created for every branch.
 
-Set your `SITE_URL` environment variable to your production domain:
+Set your `PUBLIC_SITE_URL` environment variable to your production domain:
 
 ```
-SITE_URL=https://yoursite.com
+PUBLIC_SITE_URL=https://yoursite.com
 ```
 
 This ensures canonical URLs, the sitemap, and structured data all use the correct domain.
@@ -149,7 +149,7 @@ Astro Rocket also supports [Netlify](https://netlify.com) out of the box. A `net
 3. Under **Site configuration → Environment variables**, add your variables including:
 
 ```
-SITE_URL=https://yoursite.com
+PUBLIC_SITE_URL=https://yoursite.com
 DEPLOY_TARGET=netlify
 ```
 

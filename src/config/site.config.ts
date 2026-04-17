@@ -1,4 +1,4 @@
-import { SITE_URL, GOOGLE_SITE_VERIFICATION, BING_SITE_VERIFICATION } from 'astro:env/server';
+import { PUBLIC_SITE_URL, GOOGLE_SITE_VERIFICATION, BING_SITE_VERIFICATION } from 'astro:env/server';
 
 export interface SiteConfig {
   name: string;
@@ -61,7 +61,7 @@ const siteConfig: SiteConfig = {
   name: 'ReeLaunch',
   description:
     'We help you ',
-  url: SITE_URL || 'https://astrorocket.dev',
+  url: PUBLIC_SITE_URL || 'https://astrorocket.dev',
   ogImage: '/og-default.svg',
   author: 'Karlo Krivohlavek',
   email: 'karlo.krivohlavek@hotmail.com',
@@ -73,8 +73,8 @@ const siteConfig: SiteConfig = {
     country: 'Croatia',
   },
   socialLinks: [
-    
-    
+
+
   ],
   twitter: {
     site: '',

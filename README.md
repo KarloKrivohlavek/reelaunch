@@ -191,7 +191,7 @@ Create a `.env` file from `.env.example`:
 
 ```bash
 # Required
-SITE_URL=https://yoursite.com
+PUBLIC_SITE_URL=https://yoursite.com
 
 # Optional - Analytics
 PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
