@@ -4,13 +4,11 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import icon from 'astro-icon';
 import tailwindcss from '@tailwindcss/vite';
-import vercel from '@astrojs/vercel';
 import netlify from '@astrojs/netlify';
 
-const isNetlify = process.env.DEPLOY_TARGET === 'netlify';
 
 export default defineConfig({
-  adapter: isNetlify ? netlify() : vercel(),
+  adapter: netlify(),
   site: process.env.PUBLIC_SITE_URL  ?? 'http://localhost:4321',
 
   env: {
