@@ -64,7 +64,7 @@ const siteConfig: SiteConfig = {
   url: PUBLIC_SITE_URL || 'https://astrorocket.dev',
   ogImage: '/og-default.svg',
   author: 'Karlo Krivohlavek',
-  email: 'karlo.krivohlavek@hotmail.com',
+  email: 'contact@contact.reelaunch.me',
   address: {
     street: '',
     city: 'Zagreb',
