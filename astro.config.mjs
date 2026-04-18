@@ -4,17 +4,18 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import icon from 'astro-icon';
 import tailwindcss from '@tailwindcss/vite';
+import vercel from '@astrojs/vercel';
 import netlify from '@astrojs/netlify';
 
+const isNetlify = process.env.DEPLOY_TARGET === 'netlify';
 
 export default defineConfig({
-  output: 'server', 
-  adapter: netlify(),
-  site: process.env.PUBLIC_SITE_URL  ?? 'http://localhost:4321',
+  adapter: isNetlify ? netlify() : vercel(),
+  site: process.env.PUBLIC_SITE_URL || 'http://localhost:4321',
 
   env: {
     schema: {
-      PUBLIC_SITE_URL: envField.string({ context: 'server', access: 'public', optional: true }),
+      SITE_URL: envField.string({ context: 'server', access: 'public', optional: true }),
       PUBLIC_GA_MEASUREMENT_ID: envField.string({ context: 'client', access: 'public', optional: true }),
       PUBLIC_GTM_ID: envField.string({ context: 'client', access: 'public', optional: true }),
       RESEND_API_KEY: envField.string({ context: 'server', access: 'secret', optional: true }),
